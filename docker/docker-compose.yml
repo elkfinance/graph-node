@@ -4,8 +4,9 @@ services:
     networks:
      - br0
     image: graphprotocol/graph-node
-    expose:
+    ports:
       - '8000:8000'
+    expose:
       - '8001:8001'
       - '8020:8020'
       - '8030:8030'

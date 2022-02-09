@@ -1,3 +1,23 @@
+# ELK Graph Node
+
+# installation
+
+Update `ethereum` key in `docker/docker-compose.yaml` with the corresponding url 
+
+| chain | url |
+| :---: | :---: |
+| kcc | mainnet:https://rpc-mainnet.kcc.network |
+| okex | mainnet:https://apis.ankr.com/4a3fffa631ec4c99b2d8b819ac23696c/ecbf47341b46adc7aea026d52110bf88/okexchain/full/main |
+| harmony | mainnet:no_eip1898,archive,traces:https://a.api.s0.t.hmny.io |
+| hoo | mainnet:https://http-mainnet2.hoosmartchain.com |
+| elastos | mainnet:https://escrpc.elaphant.app |
+| iotex | mainnet:https://babel-api.mainnet.iotex.io |
+| heco | mainnet:https://pub002.hg.network/rpc |
+| moonriver | mainnet:https://moonriver.api.onfinality.io/public |
+| fuse | mainnet:https://explorer-node.fuse.io |
+| telos | mainnet:https://mainnet.telos.net/evm |
+| cronos | mainnet:https://cronos-rpc.elk.finance |
+
 # Graph Node
 
 [![Build Status](https://github.com/graphprotocol/graph-node/actions/workflows/ci.yml/badge.svg)](https://github.com/graphprotocol/graph-node/actions/workflows/ci.yml?query=branch%3Amaster)

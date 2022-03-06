@@ -6,9 +6,9 @@ services:
     image: graphprotocol/graph-node
     ports:
       - '8000:8000'
+      - '8020:8020'
     expose:
       - '8001/tcp'
-      - '8020/tcp'
       - '8030/tcp'
       - '8040/tcp'
     depends_on:
@@ -26,8 +26,8 @@ services:
     networks:
      - br0
     image: ipfs/go-ipfs:v0.4.23
-    expose:
-      - '5001/tcp'
+    ports:
+      - '5001:5001'
     volumes:
       - /data/ipfs:/data/ipfs
   postgres:
